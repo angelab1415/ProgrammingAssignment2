@@ -13,9 +13,7 @@
 ## function creates matrix and caches inverse
 makeCacheMatrix <- function(x = matrix()) {
     B <- NULL
-    #  A <<- x
     set <- function(y){
-        #     A <<- y
         x <<- y
         B <<- NULL
     }
@@ -26,7 +24,6 @@ makeCacheMatrix <- function(x = matrix()) {
          setsolve = setsolve,
          getsolve = getsolve)
 }
-
 
 ## function: actual computation of inverse matrix returned by makeCacheMatrix
 
